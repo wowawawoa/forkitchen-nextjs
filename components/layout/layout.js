@@ -1,5 +1,6 @@
 import MainNavigation from "./main-navigation";
 import { styled } from "@mui/system";
+import Footer from "./footer";
 
 const MainContent = styled("main")(({ theme }) => ({
   paddingTop: "80px",
@@ -13,6 +14,7 @@ function Layout(props) {
     <>
       <MainNavigation />
       <MainContent>{props.children}</MainContent>
+      <Footer />
     </>
   );
 }

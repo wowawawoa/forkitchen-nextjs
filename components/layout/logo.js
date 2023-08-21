@@ -14,6 +14,7 @@ const LogoTitle = styled("h1")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     color: "#fff",
     fontSize: "18px",
+    fontWeight: 500,
   },
 }));
 

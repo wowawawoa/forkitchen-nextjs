@@ -4,7 +4,7 @@ import ServiceImg01 from "../../public/Images/HomePage/ServiceImg01.jpg";
 import ServiceImg02 from "../../public/Images/HomePage/ServiceImg02.jpg";
 import ServiceImg03 from "../../public/Images/HomePage/ServiceImg03.jpg";
 
-const ServiceContainer = styled("div")(({ theme }) => ({
+const ServiceContainer = styled("section")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   flexWrap: "wrap",

@@ -114,7 +114,7 @@ function MainNavigation() {
               href="/about"
               style={pathname === "/about" ? activeStyle : undefined}
             >
-              About
+              About US
             </Link>
           </NavList>
           <NavList>

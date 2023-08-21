@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AboutUsImg from "../../public/Images/HomePage/CompanyInfoImg.jpg";
 
-const AboutUsContainer = styled("div")(({ theme }) => ({
+const AboutUsContainer = styled("section")(({ theme }) => ({
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",

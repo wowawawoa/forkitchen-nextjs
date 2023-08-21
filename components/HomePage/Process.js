@@ -4,19 +4,10 @@ import { List, ListItem, ListItemIcon } from "@mui/material";
 import Image from "next/image";
 import ProcessBgImg from "public/Images/HomePage/ProcessBg.jpg";
 
-const ProcessContainer = styled("div")(() => ({
-  // backgroundImage:
-  //   "url(https://forkitchen.s3.ap-northeast-1.amazonaws.com/Images/HomePageImgs/ProcessBg.jpg)",
-  // backgroundAttachment: "fixed",
-  // backgroundSize: "cover",
-  // backgroundPosition: "center",
-}));
-
-const BgBox = styled("div")(() => ({
-  position: "absolute",
-  zIndex: -10,
+const ProcessContainer = styled("section")(() => ({
+  position: "relative",
   width: "100%",
-  height: "300px",
+  overflow: "hidden",
 }));
 
 const ContentContainer = styled("div")(({ theme }) => ({
@@ -87,19 +78,17 @@ const processes = [
 const Process = () => {
   return (
     <ProcessContainer>
-      <BgBox>
-        <Image
-          src={ProcessBgImg}
-          alt="Process background image"
-          fill
-          style={{
-            objectFit: "cover",
-            backgroundAttachment: "fixed",
-            zIndex: -10,
-            backgroundPosition: "center",
-          }}
-        />
-      </BgBox>
+      <Image
+        src={ProcessBgImg}
+        alt="Process background image"
+        fill
+        style={{
+          objectFit: "cover",
+          backgroundAttachment: "fixed",
+          zIndex: -10,
+          objectPosition: "center",
+        }}
+      />
       <ContentContainer>
         <h2>Our Process</h2>
         <ProcessList>
