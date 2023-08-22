@@ -1,5 +1,4 @@
 import { styled } from "@mui/system";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useRef, useState } from "react";
