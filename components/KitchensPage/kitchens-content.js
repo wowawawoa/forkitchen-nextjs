@@ -277,7 +277,7 @@ const sinksAndTapsItems = [
   },
 ];
 
-const Content = () => {
+const KitchensPageContent = () => {
   return (
     <ContentContainer>
       <InfoTextContainer>
@@ -575,4 +575,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default KitchensPageContent;
