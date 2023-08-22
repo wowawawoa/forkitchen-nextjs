@@ -1,17 +1,17 @@
 import { styled } from "@mui/system";
 import Image from "next/image";
-import GalleryPageImg01 from "../../public/Images/GalleryPage/GalleryPageImg01.jpeg";
-import GalleryPageImg02 from "../../public/Images/GalleryPage/GalleryPageImg02.jpeg";
-import GalleryPageImg03 from "../../public/Images/GalleryPage/GalleryPageImg03.jpg";
-import GalleryPageImg04 from "../../public/Images/GalleryPage/GalleryPageImg04.jpeg";
-import GalleryPageImg05 from "../../public/Images/GalleryPage/GalleryPageImg05.jpg";
-import GalleryPageImg06 from "../../public/Images/GalleryPage/GalleryPageImg06.jpg";
-import GalleryPageImg07 from "../../public/Images/GalleryPage/GalleryPageImg07.jpg";
-import GalleryPageImg08 from "../../public/Images/GalleryPage/GalleryPageImg08.jpeg";
-import GalleryPageImg09 from "../../public/Images/GalleryPage/GalleryPageImg09.jpg";
-import GalleryPageImg10 from "../../public/Images/GalleryPage/GalleryPageImg10.jpg";
-import GalleryPageImg11 from "../../public/Images/GalleryPage/GalleryPageImg11.jpg";
-import GalleryPageImg12 from "../../public/Images/GalleryPage/GalleryPageImg12.jpg";
+import GalleryPageImg01 from "../../public/images/GalleryPage/GalleryPageImg01.jpeg";
+import GalleryPageImg02 from "../../public/images/GalleryPage/GalleryPageImg02.jpeg";
+import GalleryPageImg03 from "../../public/images/GalleryPage/GalleryPageImg03.jpg";
+import GalleryPageImg04 from "../../public/images/GalleryPage/GalleryPageImg04.jpeg";
+import GalleryPageImg05 from "../../public/images/GalleryPage/GalleryPageImg05.jpg";
+import GalleryPageImg06 from "../../public/images/GalleryPage/GalleryPageImg06.jpg";
+import GalleryPageImg07 from "../../public/images/GalleryPage/GalleryPageImg07.jpg";
+import GalleryPageImg08 from "../../public/images/GalleryPage/GalleryPageImg08.jpeg";
+import GalleryPageImg09 from "../../public/images/GalleryPage/GalleryPageImg09.jpg";
+import GalleryPageImg10 from "../../public/images/GalleryPage/GalleryPageImg10.jpg";
+import GalleryPageImg11 from "../../public/images/GalleryPage/GalleryPageImg11.jpg";
+import GalleryPageImg12 from "../../public/images/GalleryPage/GalleryPageImg12.jpg";
 
 const ContentContainer = styled("div")(({ theme }) => ({
   padding: "5vw 0",

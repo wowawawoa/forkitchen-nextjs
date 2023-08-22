@@ -1,8 +1,8 @@
 import { styled } from "@mui/system";
 import Image from "next/image";
-import ServiceImg01 from "../../public/Images/HomePage/ServiceImg01.jpg";
-import ServiceImg02 from "../../public/Images/HomePage/ServiceImg02.jpg";
-import ServiceImg03 from "../../public/Images/HomePage/ServiceImg03.jpg";
+import ServiceImg01 from "../../public/images/HomePage/ServiceImg01.jpg";
+import ServiceImg02 from "../../public/images/HomePage/ServiceImg02.jpg";
+import ServiceImg03 from "../../public/images/HomePage/ServiceImg03.jpg";
 
 const ServiceContainer = styled("section")(({ theme }) => ({
   display: "flex",

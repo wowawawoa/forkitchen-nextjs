@@ -2,12 +2,12 @@ import { styled } from "@mui/system";
 import { List, ListItem, ListItemIcon } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import Image from "next/image";
-import KitchensPageImg01 from "../../public/Images/KitchensPage/KitchensPageImg01.jpg";
-import KitchensPageImg02 from "../../public/Images/KitchensPage/KitchensPageImg02.jpg";
-import KitchensPageImg03 from "../../public/Images/KitchensPage/KitchensPageImg03.jpg";
-import KitchensPageImg04 from "../../public/Images/KitchensPage/KitchensPageImg04.jpg";
-import KitchensPageImg05 from "../../public/Images/KitchensPage/KitchensPageImg05.jpg";
-import KitchensPageImg06 from "../../public/Images/KitchensPage/KitchensPageImg06.jpg";
+import KitchensPageImg01 from "../../public/images/KitchensPage/KitchensPageImg01.jpg";
+import KitchensPageImg02 from "../../public/images/KitchensPage/KitchensPageImg02.jpg";
+import KitchensPageImg03 from "../../public/images/KitchensPage/KitchensPageImg03.jpg";
+import KitchensPageImg04 from "../../public/images/KitchensPage/KitchensPageImg04.jpg";
+import KitchensPageImg05 from "../../public/images/KitchensPage/KitchensPageImg05.jpg";
+import KitchensPageImg06 from "../../public/images/KitchensPage/KitchensPageImg06.jpg";
 
 const ContentContainer = styled("section")(({ theme }) => ({
   padding: "5vw 0",

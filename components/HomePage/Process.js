@@ -2,7 +2,7 @@ import { styled } from "@mui/system";
 import CheckIcon from "@mui/icons-material/Check";
 import { List, ListItem, ListItemIcon } from "@mui/material";
 import Image from "next/image";
-import ProcessBgImg from "public/Images/HomePage/ProcessBg.jpg";
+import ProcessBgImg from "public/images/HomePage/ProcessBg.jpg";
 
 const ProcessContainer = styled("section")(() => ({
   position: "relative",
