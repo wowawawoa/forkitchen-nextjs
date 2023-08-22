@@ -9,7 +9,7 @@ import KitchensPageImg04 from "../../public/Images/KitchensPage/KitchensPageImg0
 import KitchensPageImg05 from "../../public/Images/KitchensPage/KitchensPageImg05.jpg";
 import KitchensPageImg06 from "../../public/Images/KitchensPage/KitchensPageImg06.jpg";
 
-const ContentContainer = styled("div")(({ theme }) => ({
+const ContentContainer = styled("section")(({ theme }) => ({
   padding: "5vw 0",
   margin: "0 auto",
   width: "1260px",
@@ -31,6 +31,7 @@ const InfoTextContainer = styled("div")(() => ({
 
 const DetailedInfoContainer = styled("div")(({ theme }) => ({
   display: "flex",
+  justifyContent: "space-between",
   [theme.breakpoints.down("lg")]: {
     flexDirection: "column",
   },
@@ -93,37 +94,39 @@ const StyledListIcon = styled(ListItemIcon)(() => ({
 }));
 
 const RightImgBox = styled("div")(({ theme }) => ({
+  position: "relative",
+  padding: "0 0 20px 40px",
   ">img": {
-    padding: "0 0 20px 40px",
+    marginLeft: "auto",
   },
   [theme.breakpoints.down("lg")]: {
     margin: "0 auto",
-    ">img": {
-      padding: 0,
-    },
+    padding: "0 0 20px 0",
   },
   [theme.breakpoints.down("sm")]: {
+    margin: "0 auto",
+    padding: "0 0 20px 0",
     ">img": {
-      maxWidth: "100%",
+      width: "100%",
+      height: "100%",
     },
   },
 }));
 
 const LeftImgBox = styled("div")(({ theme }) => ({
-  ">img": {
-    padding: "0 40px 20px 0",
-    objectFit: "cover",
-    display: "block",
-  },
+  position: "relative",
+  padding: "0 40px 20px 0",
+  // ">img": {
+  //   padding: "0 40px 20px 0",
+  // },
   [theme.breakpoints.down("lg")]: {
     margin: "0 auto 10px",
-    ">img": {
-      padding: 0,
-    },
+    padding: 0,
   },
   [theme.breakpoints.down("sm")]: {
     ">img": {
-      maxWidth: "100%",
+      width: "100%",
+      height: "100%",
     },
   },
 }));
@@ -291,10 +294,11 @@ const Content = () => {
           centerpiece of your living space and add great value to your home.
         </p>
         <p>
-          An outdoor kitchen is enjoyable as you&apos;re able to breathe some fresh
-          air and see greenery all around. Well, we design and build beautiful
-          custom outdoor kitchens too! Nonetheless, if you&apos;re looking for a
-          readymade kitchen then we also have them in standard sizes.
+          An outdoor kitchen is enjoyable as you&apos;re able to breathe some
+          fresh air and see greenery all around. Well, we design and build
+          beautiful custom outdoor kitchens too! Nonetheless, if you&apos;re
+          looking for a readymade kitchen then we also have them in standard
+          sizes.
         </p>
       </InfoTextContainer>
       <DetailedInfoContainer>
@@ -317,8 +321,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg01}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </RightImgBox>
       </DetailedInfoContainer>
@@ -337,8 +343,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg02}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </LeftImgBox>
         <DetailedInfoListContainer>
@@ -372,8 +380,8 @@ const Content = () => {
             C-shaped, J-shaped, and galley style. Depending on the available
             space in your kitchen, you can choose the most fitting kitchen shape
             for optimal functionality and aesthetics. Regardless of the kitchen
-            shape or layout you choose, you need to be sure that you&apos;ll be happy
-            with your selected style for many years.
+            shape or layout you choose, you need to be sure that you&apos;ll be
+            happy with your selected style for many years.
           </p>
         </DetailedInfoListContainer>
       </DetailedInfoContainer>
@@ -413,8 +421,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg03}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </RightImgBox>
       </DetailedInfoContainer>
@@ -440,8 +450,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg04}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </LeftImgBox>
         <DetailedInfoListContainer>
@@ -512,8 +524,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg05}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </RightImgBox>
       </DetailedInfoContainer>
@@ -522,8 +536,10 @@ const Content = () => {
           <Image
             src={KitchensPageImg06}
             alt="kitchen display"
-            fill={true}
-            objectFit="cover"
+            style={{
+              objectFit: "cover",
+              display: "block",
+            }}
           />
         </LeftImgBox>
         <DetailedInfoListContainer>

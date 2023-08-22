@@ -85,8 +85,6 @@ const AboutUs = () => {
           <Image
             src={AboutUsImg}
             alt="kitchen display"
-            // fill
-            // style={{ objectFit: "cover" }}
             width={600}
             height={560}
           />

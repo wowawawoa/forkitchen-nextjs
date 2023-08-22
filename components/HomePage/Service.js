@@ -48,12 +48,6 @@ const ListItem = styled("li")(({ theme }) => ({
   width: "32%",
   margin: "0 0 20px",
   backgroundColor: "#f5f5f5",
-  // ">img": {
-  //   margin: "0 auto",
-  //   height: "270px",
-  //   width: "100%",
-  //   objectFit: "cover",
-  // },
   [theme.breakpoints.down("md")]: {
     width: "100%",
   },
@@ -101,7 +95,7 @@ const Service = () => {
               For Kitchen manufactures readymade kitchen cabinets using diverse
               materials, finishes, as well as, colours and styles to offer great
               convenience and are budget-friendly. If you want to build new
-              kitchen cabinets but don’t want to go through the trouble and
+              kitchen cabinets but don&apos;t want to go through the trouble and
               expense of having them custom made, then ready-made kitchen
               cabinets may be an easy and viable solution for you. Besides,
               installing readymade kitchen cabinets is a lot quicker, saving you
