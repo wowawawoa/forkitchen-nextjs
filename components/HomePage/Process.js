@@ -44,13 +44,17 @@ const ProcessList = styled(List)(() => ({
   margin: "0 auto",
 }));
 
-const ProcessListItem = styled(ListItem)(() => ({
+const ProcessListItem = styled(ListItem)(({ theme }) => ({
   color: "#fff",
   ">p": {
     fontFamily: "'Mukta Vaani', sans-serif",
     margin: 0,
     padding: 0,
     lineHeight: "1.5em",
+    fontSize: "18px",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "16px",
+    },
   },
 }));
 

@@ -8,17 +8,13 @@ const ContentContainer = styled("section")(({ theme }) => ({
     margin: "0 0 1em 0",
     padding: 0,
     fontFamily: "'Mukta Vaani', sans-serif",
+    fontSize: "18px",
   },
   [theme.breakpoints.down("lg")]: {
     width: "100%",
     padding: "28px 14px",
     ">p": {
       fontSize: "16px",
-    },
-  },
-  [theme.breakpoints.down("md")]: {
-    ">p": {
-      fontSize: "14px",
     },
   },
 }));

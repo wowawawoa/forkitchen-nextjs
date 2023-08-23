@@ -22,10 +22,15 @@ const ContentContainer = styled("section")(({ theme }) => ({
   },
 }));
 
-const InfoTextContainer = styled("div")(() => ({
+const InfoTextContainer = styled("div")(({ theme }) => ({
   ">p": {
     margin: "0 0 1em",
+    fontFamily: "'Mukta Vaani', sans-serif",
     lineHeight: "1.5em",
+    fontSize: "18px",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "16px",
+    },
   },
 }));
 
@@ -46,6 +51,9 @@ const DetailedInfoListContainer = styled("div")(({ theme }) => ({
     lineHeight: "24px",
     fontWeight: 500,
     margin: 0,
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "20px",
+    },
   },
   ">h3": {
     color: "#000",
@@ -53,14 +61,27 @@ const DetailedInfoListContainer = styled("div")(({ theme }) => ({
     padding: "0 0 10px",
     lineHeight: "22px",
     margin: 0,
+    fontFamily: "'Oswald', sans-serif",
+    fontWeight: 500,
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "18px",
+    },
   },
   ">h4": {
     margin: 0,
     fontSize: "16px",
     textTransform: "uppercase",
+    fontFamily: "'Oswald', sans-serif",
+    fontWeight: 500,
   },
   ">p": {
     margin: "0 0 16px 0",
+    fontFamily: "'Mukta Vaani', sans-serif",
+    fontSize: "18px",
+    lineHeight: "1.5em",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "16px",
+    },
   },
   [theme.breakpoints.down("lg")]: {
     ">h2": {
@@ -76,10 +97,16 @@ const DetailedInfoList = styled(List)(() => ({
   padding: "10px",
 }));
 
-const KDetailedInfoListItem = styled(ListItem)(() => ({
+const KDetailedInfoListItem = styled(ListItem)(({ theme }) => ({
   padding: "0 0 10px 0",
   ">p": {
     margin: 0,
+    fontFamily: "'Mukta Vaani', sans-serif",
+    fontSize: "18px",
+    lineHeight: "1.5em",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "16px",
+    },
   },
 }));
 
@@ -116,9 +143,6 @@ const RightImgBox = styled("div")(({ theme }) => ({
 const LeftImgBox = styled("div")(({ theme }) => ({
   position: "relative",
   padding: "0 40px 20px 0",
-  // ">img": {
-  //   padding: "0 40px 20px 0",
-  // },
   [theme.breakpoints.down("lg")]: {
     margin: "0 auto 10px",
     padding: 0,

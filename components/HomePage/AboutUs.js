@@ -46,6 +46,10 @@ const ContentContainer = styled("div")(({ theme }) => ({
     lineHeight: "1.8em",
     margin: "0 0 1em 0",
     color: "#333",
+    fontSize: "18px",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "16px",
+    },
   },
   [theme.breakpoints.down("lg")]: {
     width: "100%",
