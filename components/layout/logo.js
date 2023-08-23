@@ -6,7 +6,7 @@ const LogoTitle = styled("h1")(({ theme }) => ({
   textTransform: "uppercase",
   fontFamily: "'Oswald', sans-serif",
   lineHeight: "1em",
-  // fontWeight: 500,
+  fontWeight: 500,
   margin: 0,
   [theme.breakpoints.down("lg")]: {
     fontSize: "28px",
