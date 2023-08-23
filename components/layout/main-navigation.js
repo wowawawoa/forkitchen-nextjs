@@ -3,6 +3,7 @@ import Logo from "./logo";
 import { styled } from "@mui/system";
 import { useRouter } from "next/router";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import MobileNav from "./mobile-nav";
 
 const HeaderContainer = styled("header")(({ theme }) => ({
   display: "flex",
@@ -23,11 +24,14 @@ const HeaderContainer = styled("header")(({ theme }) => ({
   },
 }));
 
-const NavContainer = styled("nav")((theme) => ({
+const NavContainer = styled("nav")(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   flexWrap: "wrap",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
 }));
 
 const NavBox = styled("ul")(() => ({
@@ -93,6 +97,14 @@ const StyledPhoneInTalkIcon = styled(PhoneInTalkIcon)(() => ({
   width: "24px",
 }));
 
+export const navs = [
+  { id: 1, link: "/", name: "Home" },
+  { id: 2, link: "/about", name: "About Us" },
+  { id: 3, link: "/kitchens", name: "Kitchens" },
+  { id: 4, link: "/gallery", name: "Gallery" },
+  { id: 5, link: "/contact", name: "Contact Us" },
+];
+
 function MainNavigation() {
   const router = useRouter();
   const { pathname } = router;
@@ -102,45 +114,19 @@ function MainNavigation() {
       <Link href="/">
         <Logo />
       </Link>
+      <MobileNav />
       <NavContainer>
         <NavBox>
-          <NavList>
-            <Link href="/" style={pathname === "/" ? activeStyle : undefined}>
-              Home
-            </Link>
-          </NavList>
-          <NavList>
-            <Link
-              href="/about"
-              style={pathname === "/about" ? activeStyle : undefined}
-            >
-              About US
-            </Link>
-          </NavList>
-          <NavList>
-            <Link
-              href="/kitchens"
-              style={pathname === "/kitchens" ? activeStyle : undefined}
-            >
-              Kitchens
-            </Link>
-          </NavList>
-          <NavList>
-            <Link
-              href="/gallery"
-              style={pathname === "/gallery" ? activeStyle : undefined}
-            >
-              Gallery
-            </Link>
-          </NavList>
-          <NavList>
-            <Link
-              href="/contact"
-              style={pathname === "/contact" ? activeStyle : undefined}
-            >
-              Contact Us
-            </Link>
-          </NavList>
+          {navs.map((nav) => (
+            <NavList key={nav.id}>
+              <Link
+                href={nav.link}
+                style={pathname === nav.link ? activeStyle : undefined}
+              >
+                {nav.name}
+              </Link>
+            </NavList>
+          ))}
         </NavBox>
         <PhoneNumContainer>
           <IconBox>
