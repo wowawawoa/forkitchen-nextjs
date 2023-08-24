@@ -1,6 +1,7 @@
 import PageBanner from "@/components/layout/page-banner";
 import KitchensPageContent from "@/components/KitchensPage/kitchens-content";
 import kitchensPageBannerImg from "@/public/images/KitchensPage/KitchensPageBanner.jpg";
+import Head from "next/head";
 
 const bannerContent = {
   PageTitle: "Kitchens",
@@ -12,6 +13,9 @@ const bannerContent = {
 const KitchensPage = () => {
   return (
     <>
+      <Head>
+        <title>Kitchens | For Kitchen</title>
+      </Head>
       <PageBanner
         PageTitle={bannerContent.PageTitle}
         PagePath={bannerContent.PagePath}
