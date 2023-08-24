@@ -1,6 +1,7 @@
 import PageBanner from "@/components/layout/page-banner";
 import AboutPageContent from "@/components/AboutPage/about-content";
 import AboutPageBannerImg from "@/public/images/AboutPage/AboutUsPageBanner.jpg";
+import Head from "next/head";
 
 const bannerContent = {
   PageTitle: "About Us",
@@ -12,6 +13,9 @@ const bannerContent = {
 const AboutPage = () => {
   return (
     <>
+      <Head>
+        <title>About Us | For Kitchen</title>
+      </Head>
       <PageBanner
         PageTitle={bannerContent.PageTitle}
         PagePath={bannerContent.PagePath}
